@@ -51,3 +51,55 @@ nav {
   text-align: center;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pc-menu {
+    display: none !important;
+  }
+}
+.pc-menu {
+  margin-right: 10px;
+}
+
+.mobile-menu {
+  i {
+    color: white;
+  }
+  ul {
+    padding: 0px;
+  }
+  a {
+    display: block;
+    padding: 10px 0px 10px 25px !important;
+  }
+  a:hover {
+    background: white !important;
+    color: black !important;
+    i {
+      color: black;
+    }
+  }
+}
+
+.icon-bar {
+  background-color: white !important;
+}
+
+.active a {
+  background: $navbarColor !important;
+  border-bottom: solid 5px white;
+}
+
+.dropdown-toggle, .dropdown-menu {
+  background: $navbarColor !important;
+  border: none;
+}
+
+.dropdown-menu a:hover {
+  color: black !important;
+  background: white !important;
+}
